@@ -6,3 +6,5 @@ src/Tests/obj/
 SampleApp/SampleWebApp/bin/
 SampleApp/SampleWebApp/obj/
 SampleApp/.vs/
+SampleApp/Tests/bin/
+SampleApp/Tests/obj/
