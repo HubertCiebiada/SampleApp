@@ -34,7 +34,7 @@ jobs:
         with:
           context: "./SampleApp"
           push: true
-          tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
+          tags: ghcr.io/samplewebapp:${{ github.sha }}
           file: ./SampleApp/SampleWebApp/Dockerfile
 
   deploy:
@@ -52,4 +52,4 @@ jobs:
           app-name: "SampleWebAppHubertCiebiada"
           slot-name: "production"
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_ffbf46b1b9864aa19f9687eb495f8879 }}
-          images: "ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/samplewebapp:latest"
+          images: "ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/samplewebapp:${{ github.sha }}"
