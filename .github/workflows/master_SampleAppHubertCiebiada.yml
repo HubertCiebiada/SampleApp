@@ -31,7 +31,7 @@ jobs:
       with:
         context: "./SampleApp"
         push: true
-        tags: ghcr.io/${{ secrets.AzureAppService_ContainerUsername_d4b52ba47eb9447fa0068972bfd2106c }}/hubertciebiada/sampleapp:${{ github.sha }}
+        tags: ghcr.io/hubertciebiada/hubertciebiada/sampleapp:${{ github.sha }}
         file: ./SampleApp/SampleWebApp/Dockerfile
 
   deploy:
