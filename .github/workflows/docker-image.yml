@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: |
         cd ./src/SampleApp
-        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        docker build -f Dockerfile .. --tag my-image-name:$(date +%s)
