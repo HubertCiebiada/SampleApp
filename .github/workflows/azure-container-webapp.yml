@@ -37,7 +37,7 @@ on:
 
 defaults:
   run:
-    working-directory: ./src # here I setup working directory for flow
+    working-directory: ./src/SampleApp # here I setup working directory for flow
 
 jobs:
   build:
