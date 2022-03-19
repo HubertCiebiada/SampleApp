@@ -29,9 +29,10 @@ jobs:
     - name: Build and push container image to registry
       uses: docker/build-push-action@v2
       with:
+        context: "./SampleApp"
         push: true
-        tags: ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/sampleapp:${{ github.sha }}
-        file: ./Dockerfile
+        tags: ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/sampleapp:latest
+        file: ./SampleApp/SampleWebApp/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,4 +49,4 @@ jobs:
         app-name: 'SampleWebAppHubertCiebiada'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_ffbf46b1b9864aa19f9687eb495f8879 }}
-        images: 'ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/sampleapp:${{ github.sha }}'
+        images: 'ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/ghcr.io/hubertciebiada/sampleapp:latest'
