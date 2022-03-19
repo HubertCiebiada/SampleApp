@@ -61,7 +61,7 @@ jobs:
           context: "./SampleApp"
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          file: ./SampleWebApp/Dockerfile
+          file: ./SampleApp/SampleWebApp/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
