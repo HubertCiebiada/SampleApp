@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-SampleApp-99EF9DAA-636E-4E77-A4D6-2F7744718B44</UserSecretsId>
+    <UserSecretsId>aspnet-SampleWebApp-312B12C3-757C-48FB-9836-4BF82ED6B6AB</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 

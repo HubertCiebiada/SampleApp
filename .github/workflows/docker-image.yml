@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Docker image
-        run: docker build -f "./src/SampleApp/Dockerfile" --force-rm -t sampleapp  "./src"
+        run: docker build -f "./SampleApp/SampleWebApp/Dockerfile" --force-rm -t sampleapp  "./SampleApp"
