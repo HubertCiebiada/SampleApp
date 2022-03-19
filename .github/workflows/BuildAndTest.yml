@@ -19,13 +19,13 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: |
-        cd SampleApp
+        cd src
         dotnet restore
     - name: Build
       run: |
-        cd SampleApp
+        cd src
         dotnet build --no-restore
     - name: Test
       run: |
-        cd SampleApp
+        cd src
         dotnet test --no-build --verbosity normal
