@@ -1,5 +1,5 @@
-src/.vs/
-src/SampleApp/bin/
-src/SampleApp/obj/
-src/UnitTests/bin/
-src/UnitTests/obj/
+SampleApp/.vs/
+SampleApp/SampleApp/bin/
+SampleApp/SampleApp/obj/
+SampleApp/UnitTests/bin/
+SampleApp/UnitTests/obj/
