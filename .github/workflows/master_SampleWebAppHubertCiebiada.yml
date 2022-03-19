@@ -31,7 +31,7 @@ jobs:
       with:
         context: "./SampleApp"
         push: true
-        tags: ghcr.io/${{ env.REPO }}:latest
+        tags: ghcr.io/${{ secrets.AzureAppService_ContainerUsername_a24c92b4ba5249119d132c6cdc7b89f2 }}/samplewebapp:latest
         file: ./SampleApp/SampleWebApp/Dockerfile
 
   deploy:
