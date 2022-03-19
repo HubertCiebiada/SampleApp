@@ -58,10 +58,10 @@ jobs:
       - name: Build and push container image to registry
         uses: docker/build-push-action@v2
         with:
-          context: "{{defaultContext}}:SampleApp"
+          context: "./SampleApp"
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
-          file: ./SampleApp/SampleWebApp/Dockerfile
+          file: ./SampleWebApp/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
